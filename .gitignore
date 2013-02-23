@@ -1,0 +1,11 @@
+.bundle
+db/*.sqlite3
+log/*.log
+tmp/
+*.swp
+*.lock
+config/database.yml
+db/schema.rb
+pdf/*.pdf
+*~
+public/images/pictures/*
