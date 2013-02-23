@@ -5,6 +5,31 @@
 }
 
 
+#content-left {
+  color: ThreeDDarkShadow;
+  font-family: Verdana,Tahoma,Arial;
+  font-size: 12px;
+  width: 450px;
+  float: left;
+}
+
+#content-right {
+  color: ThreeDDarkShadow;
+  font-family: Verdana,Tahoma,Arial;
+  font-size: 12px;
+  width: 450px;
+  float: right;
+}
+
+.welc {
+  background: url("../assets/content-bg.png") repeat scroll 0 0 transparent;
+  height: 200px;
+}
+
+img.floatLeft {                                                                 
+    float: left;                                                                
+    margin: 4px;                                                                
+}
 </style>
 
 <%= javascript_include_tag "ac_activex"%>                                       
@@ -29,7 +54,25 @@
 </div>
 
 <div class="span12">
-  <div class="well sidebar-nav">
-    <h1>..........</h1>
+  <div class="well sidebar-nav welc">
+    <div id = "content-left">
+      <font style="font-weight:bold;font-size:20px;">WELCOME</font><br/>
+       <%= image_tag('egg-farm.jpg' , :border => 0 ,                                        
+           :width => 204,  :height =>180, :valign => 'top' ,
+           :class => 'floatLeft') %>
+      <p>Laoreet dolore magnaorem ipsum dolor ser adipiscing elit, sed diam nonummy nibh 
+         euismod tincidunt ut laoreet dolore set.sit amet consec tetuer 
+         Aadipiscing elit sed diam.</p>
+    </div>
+    <div id = "content-right">
+      <font style="font-weight:bold;font-size:20px;">OUR PRODUCTS</font><br/>
+       <%= image_tag('egg-farm.jpg' , :border => 0 ,                                        
+           :width => 204,  :height =>180, :valign => 'top' ,
+           :class => 'floatLeft') %>
+      <p>Laoreet dolore magnaorem ipsum dolor ser adipiscing elit, sed diam nonummy nibh 
+         euismod tincidunt ut laoreet dolore set.sit amet consec tetuer 
+         Aadipiscing elit sed diam.</p>
+    </div>
+    </div>
   </div>
 </div>
