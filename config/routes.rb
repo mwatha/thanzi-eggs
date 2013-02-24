@@ -1,4 +1,10 @@
 ThanziEggs::Application.routes.draw do
+  get "home/about"
+
+  get "home/products"
+
+  get "home/contact"
+
   get "home/index"
 
   # The priority is based upon order of creation:

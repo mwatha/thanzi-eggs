@@ -23,12 +23,14 @@
 
 .welc {
   background: url("../assets/content-bg.png") repeat scroll 0 0 transparent;
-  height: 200px;
+  height: 300px;
 }
 
-img.floatLeft {                                                                 
-    float: left;                                                                
-    margin: 4px;                                                                
+.floatLeft {                                                                 
+  float: left;                                                                
+  margin: 4px;      
+  width: 200px;
+  height: 150px;                                                          
 }
 </style>
 
@@ -36,20 +38,28 @@ img.floatLeft {
 
 <div class="span12">
   <div class="well sidebar-nav flash-player">
-      <script type="text/javascript">                                                 
-      AC_RunFlashContent('width','100%','height','100%','quality','high','autoplay','true','loop','true','wmode','opaque','FlashVars','bcastr_xml_url=/assets/slide.xml&AutoPlayTime=5','codebase','http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab','pluginspage','http://www.macromedia.com/go/getflashplayer','src','/assets/bcastr31.swf');
-      </script>                                                                       
-      <noscript>                                                                      
-      <object width='100%' height='100%' classid="clsid:D27CDB6E-AE6D-11CF-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/   swflash.cab">
-      <param name="movie" value="/assets/bcastr31.swf">                               
-      <param name="quality" value="high">                                             
-      <param name="loop" value="true">                                                
-      <param name="wmode" value="opaque">                                             
-      <param name="autoplay" value="true">                                            
-      <param name="FlashVars" value="bcastr_xml_url=/assets/slide.xml&AutoPlayTime=5">
-      <embed src="/assets/bcastr31.swf" width='100%' height='100%' quality="high" TYPE="application/x-shockwave-flash" wmode="opaque" FlashVars="bcastr_xml_url=/assets/slide.xml&AutoPlayTime=5" loop="true" autoplay="true" pluginspage="http://www.macromedia.com/go/getflashplayer"></embed>
-      </object>                                                                       
-      </noscript> 
+
+
+
+<script type="text/javascript">                                                 
+AC_RunFlashContent('width','100%','height','100%','quality','high','autoplay','true','loop','true','wmode','opaque','FlashVars','bcastr_xml_url=/assets/slide.xml&AutoPlayTime=5','codebase','http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab','pluginspage','http://www.macromedia.com/go/getflashplayer','src','/assets/bcastr31.swf');
+</script>                                                                       
+<noscript>                                                                      
+<object width="100%" height="100%" classid="clsid:D27CDB6E-AE6D-11CF-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/   swflash.cab">
+<param name="movie" value="/assets/bcastr31.swf">                               
+<param name="quality" value="high">                                             
+<param name="loop" value="true">                                                
+<param name="wmode" value="opaque">                                             
+<param name="autoplay" value="true">                                            
+<param name="FlashVars" value="bcastr_xml_url=/assets/slide.xml&AutoPlayTime=5">
+<embed src="/assets/bcastr31.swf" width="100%" height="100%" quality="high" TYPE="application/x-shockwave-flash" wmode="opaque" FlashVars="bcastr_xml_url=/  assets/slide.xml&AutoPlayTime=5" loop="true" autoplay="true" pluginspage="http://www.macromedia.com/go/getflashplayer"></embed>
+</object>                                                                       
+</noscript>
+
+
+
+
+
   </div>
 </div>
 
@@ -57,22 +67,38 @@ img.floatLeft {
   <div class="well sidebar-nav welc">
     <div id = "content-left">
       <font style="font-weight:bold;font-size:20px;">WELCOME</font><br/>
-       <%= image_tag('egg-farm.jpg' , :border => 0 ,                                        
-           :width => 204,  :height =>180, :valign => 'top' ,
+       <%= image_tag('poultry_big.jpg' , :valign => 'top' ,
            :class => 'floatLeft') %>
+      <p>Laoreet dolore magnaorem ipsum dolor ser adipiscing elit, sed diam nonummy nibh 
+         euismod tincidunt ut laoreet dolore set.sit amet consec tetuer 
+         Aadipiscing elit sed diam.</p>
+      <p>Laoreet dolore magnaorem ipsum dolor ser adipiscing elit, sed diam nonummy nibh 
+         euismod tincidunt ut laoreet dolore set.sit amet consec tetuer 
+         Aadipiscing elit sed diam.</p>
       <p>Laoreet dolore magnaorem ipsum dolor ser adipiscing elit, sed diam nonummy nibh 
          euismod tincidunt ut laoreet dolore set.sit amet consec tetuer 
          Aadipiscing elit sed diam.</p>
     </div>
     <div id = "content-right">
       <font style="font-weight:bold;font-size:20px;">OUR PRODUCTS</font><br/>
-       <%= image_tag('egg-farm.jpg' , :border => 0 ,                                        
-           :width => 204,  :height =>180, :valign => 'top' ,
+       <%= image_tag('egg-farm.jpg' , :valign => 'top' ,
            :class => 'floatLeft') %>
       <p>Laoreet dolore magnaorem ipsum dolor ser adipiscing elit, sed diam nonummy nibh 
          euismod tincidunt ut laoreet dolore set.sit amet consec tetuer 
          Aadipiscing elit sed diam.</p>
+      <p>Laoreet dolore magnaorem ipsum dolor ser adipiscing elit, sed diam nonummy nibh 
+         euismod tincidunt ut laoreet dolore set.sit amet consec tetuer 
+         Aadipiscing elit sed diam.</p>
+      <p>Laoreet dolore magnaorem ipsum dolor ser adipiscing elit, sed diam nonummy nibh 
+         euismod tincidunt ut laoreet dolore set.sit amet consec tetuer 
+         Aadipiscing elit sed diam.</p>
+        <div style="bottom: 25px; position: absolute; width: 344px;">                                            
+          <a href="#"><%= image_tag("find-us-on-facebook-5.png" , :border => 0 ,:width => 160 ,:height =>27)%></a>
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="#"><%= image_tag("follow-us-on-twitter-1.png" , :border => 0 ,:width => 160 ,:height =>27)%></a>
+        </div> 
     </div>
     </div>
+
   </div>
 </div>
